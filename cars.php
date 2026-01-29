@@ -2,10 +2,8 @@
 require_once 'includes/db_connect.php';
 include 'includes/header.php'; 
 
-// መኪናዎችን ከዳታቤዝ ማምጣት
 $result = $conn->query("SELECT * FROM cars WHERE status = 'available' ORDER BY id DESC");
 ?>
-
 <div style="padding: 50px 8%;">
     <div style="margin-bottom: 40px;">
         <h1 style="border-left: 5px solid #38bdf8; padding-left: 15px; margin: 0;">Our Rental Fleet</h1>
